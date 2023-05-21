@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Color Detector</title>
+    <style>
+        /* Body styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+        }
+
+        /* Header styles */
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+        }
+
+        /* Container styles */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Image styles */
+        #uploaded-image {
+            max-width: 50%;
+            height: auto;
+            display: none;
+            margin-bottom: 20px;
+        }
+
+        /* Color box styles */
+        .color-box {
+            width: 50px;
+            height: 50px;
+            display: inline-block;
+            margin-right: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        /* Color label styles */
+        .color-label {
+            font-size: 16px;
+            margin-right: 10px;
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            font-size: 14px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Color Detector
+    </header>
+    <div class="container">
+        <input type="file" accept="image/*" id="file-upload">
+        <br><br>
+        <img src="#" alt="Uploaded image" id="uploaded-image">
+        <div id="color-boxes"></div>
+    </div>
+    <footer>
+        Created by Swarup Saw
+        //2023//
+    </footer>
+    <script src="colorDetector.js"></script>
+</body>
+</html>
